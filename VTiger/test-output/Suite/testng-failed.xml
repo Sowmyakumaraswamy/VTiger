@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="TestRunner_Firefox(failed)">
+    <parameter name="BROWSER" value="Firefox"/>
+    <classes>
+      <class name="VTiger.Contacts.CreateContactTest">
+        <methods>
+          <include name="bcConfig"/>
+          <include name="amConfig"/>
+          <include name="bsConfig"/>
+          <include name="bmConfig"/>
+          <include name="asConfig"/>
+          <include name="acConfig"/>
+          <include name="createNewContactTest"/>
+        </methods>
+      </class> <!-- VTiger.Contacts.CreateContactTest -->
+    </classes>
+  </test> <!-- TestRunner_Firefox(failed) -->
+  <test thread-count="2" parallel="tests" name="TestRunner-Chrome(failed)">
+    <parameter name="BROWSER" value="Chrome"/>
+    <classes>
+      <class name="VTiger.Contacts.CreateContactTest">
+        <methods>
+          <include name="bcConfig"/>
+          <include name="amConfig"/>
+          <include name="bsConfig"/>
+          <include name="bmConfig"/>
+          <include name="asConfig"/>
+          <include name="acConfig"/>
+          <include name="createNewContactTest"/>
+        </methods>
+      </class> <!-- VTiger.Contacts.CreateContactTest -->
+    </classes>
+  </test> <!-- TestRunner-Chrome(failed) -->
+</suite> <!-- Failed suite [Suite] -->
