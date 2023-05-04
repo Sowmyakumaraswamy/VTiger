@@ -14,6 +14,9 @@ public class ReadDataFromCmdLine {
 		String PVALUE = System.getProperty("password");
 		System.out.println(PVALUE);
 		
+		String NVALUE = System.getProperty("username");
+		System.out.println(NVALUE);
+		
 	}
 
 }
